@@ -2,18 +2,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Foodie</title>
-<link rel="stylesheet" href="style.css">
+    <title>Foodie - Online Food Ordering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>🍔 Foodie Restaurant</h1>
 
-<h2>Our Menu</h2>
-<div id="menu"></div>
+<header>
+    <h1>🍔 Foodie</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#cart">Cart (<span id="count">0</span>)</a>
+    </nav>
+</header>
 
-<h2>My Cart</h2>
-<div id="cart"></div>
-<h3>Total: ₹<span id="total">0</span></h3>
+<section class="hero" id="home">
+    <h2>Delicious Food Delivered To You!</h2>
+    <p>Order your favourite food online.</p>
+    <a href="#menu" class="btn">Order Now</a>
+</section>
+
+<section id="menu">
+    <h2>Our Food Menu</h2>
+
+    <input type="text" id="search"
+           placeholder="Search food...">
+
+    <div class="filters">
+        <button onclick="filterFood('All')">All</button>
+        <button onclick="filterFood('Pizza')">Pizza</button>
+        <button onclick="filterFood('Burger')">Burger</button>
+        <button onclick="filterFood('Drinks')">Drinks</button>
+    </div>
+
+    <div class="food-container" id="foodList"></div>
+</section>
+
+<section id="cart">
+    <h2>🛒 Your Cart</h2>
+    <div id="cartItems"></div>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <button class="btn" onclick="placeOrder()">
+        Place Order
+    </button>
+</section>
+
+<footer>
+    <p>© 2026 Foodie | Online Food Ordering Website</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
