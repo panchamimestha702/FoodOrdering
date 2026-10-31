@@ -2,44 +2,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Foodie - Online Food Ordering</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Foodie - Food Ordering System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>🍕 Foodie Restaurant</h1>
-  <p>Order Your Favourite Food!</p>
+    <header>
+        <h1>🍕 Foodie Restaurant</h1>
+        <p>Order Your Favourite Food!</p>
+    </header>
 
-  <div class="container">
-    <div class="food">
-      <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400" alt="Pizza">
-      <h2>Pizza</h2>
-      <p>₹150</p>
-      <button onclick="addFood('Pizza',150)">Add to Cart</button>
+    <h2>Our Menu</h2>
+
+    <div class="container">
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400" alt="Pizza">
+            <h2>Pizza</h2>
+            <p>₹150</p>
+            <button onclick="addFood('Pizza',150)">Add to Cart</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" alt="Burger">
+            <h2>Burger</h2>
+            <p>₹100</p>
+            <button onclick="addFood('Burger',100)">Add to Cart</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400" alt="Pasta">
+            <h2>Pasta</h2>
+            <p>₹120</p>
+            <button onclick="addFood('Pasta',120)">Add to Cart</button>
+        </div>
+
     </div>
 
-    <div class="food">
-      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" alt="Burger">
-      <h2>Burger</h2>
-      <p>₹100</p>
-      <button onclick="addFood('Burger',100)">Add to Cart</button>
-    </div>
+    <section class="cart-section">
+        <h2>🛒 Shopping Cart</h2>
+        <div id="cart">Cart is empty</div>
+        <h2 id="total">Total: ₹0</h2>
 
-    <div class="food">
-      <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400" alt="Pasta">
-      <h2>Pasta</h2>
-      <p>₹120</p>
-      <button onclick="addFood('Pasta',120)">Add to Cart</button>
-    </div>
-  </div>
+        <button id="orderBtn" onclick="orderFood()">
+            Place Order
+        </button>
+    </section>
 
-  <h2>🛒 Shopping Cart</h2>
-  <div id="cart"></div>
-  <h2 id="total">Total: ₹0</h2>
+    <section id="tracking">
+        <h2>📦 Track Your Order</h2>
+        <div class="step" id="step1">🛒 Order Confirmed</div>
+        <div class="step" id="step2">🍳 Food Preparing</div>
+        <div class="step" id="step3">🛵 Out for Delivery</div>
+        <div class="step" id="step4">🎉 Delivered</div>
+        <h3 id="status"></h3>
+    </section>
 
-  <button onclick="orderFood()">Place Order</button>
-  <h3 id="status"></h3>
+    <footer>
+        <p>© 2026 Foodie Restaurant | Online Food Ordering</p>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
