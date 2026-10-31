@@ -1,163 +1,26 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    background: #f8f8f8;
-    color: #333;
+  font-family: Arial;
+  text-align: center;
+  background: #fff3e0;
 }
 
-header {
-    background: #ff5722;
-    color: white;
-    padding: 18px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+h1 {
+  color: #e65100;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
+.food {
+  background: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
 }
 
-.hero {
-    text-align: center;
-    padding: 90px 15px;
-    background: #ffe0b2;
-}
-
-.hero h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    margin-bottom: 25px;
-}
-
-.btn, button {
-    background: #ff5722;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-#menu, #cart {
-    padding: 40px 7%;
-    text-align: center;
-}
-
-#menu h2, #cart h2 {
-    margin-bottom: 25px;
-}
-
-#search {
-    padding: 12px;
-    width: 80%;
-    max-width: 400px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.filters {
-    margin: 20px;
-}
-
-.filters button {
-    margin: 5px;
-}
-
-.food-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.food-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px #ddd;
-}
-
-.food-card .food-img {
-    font-size: 65px;
-    margin-bottom: 12px;
-}
-
-.food-card h3 {
-    margin-bottom: 10px;
-}
-
-.food-card p {
-    margin: 10px;
-    color: #ff5722;
-    font-weight: bold;
-}
-
-.food-card button {
-    margin-top: 10px;
-}
-
-#cartItems {
-    margin: 20px auto;
-    max-width: 600px;
-}
-
-.cart-item {
-    background: white;
-    padding: 12px;
-    margin: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-}
-
-.cart-item button {
-    padding: 6px 10px;
-}
-
-#cart h3 {
-    margin: 20px;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-@media(max-width: 600px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav a {
-        margin: 5px;
-    }
-
-    .hero h2 {
-        font-size: 24px;
-    }
-
-    .cart-item {
-        flex-wrap: wrap;
-    }
+button {
+  background: #ff5722;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
