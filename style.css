@@ -1,0 +1,21 @@
+
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #fff3e0;
+}
+h1 { background: orangered; color: white; padding: 20px; }
+.item {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+button {
+    background: orangered;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
